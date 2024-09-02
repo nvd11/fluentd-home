@@ -1,6 +1,6 @@
 # 使用 Fluentd 官方的镜像作为基础镜像
 FROM fluentd:latest
-
+USER root
 RUN mkdir -p /app/logs/
 
 

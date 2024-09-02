@@ -3,6 +3,7 @@ FROM fluent/fluentd:latest
 
 RUN mkdir -p /app/logs/
 
+
 # 安装 fluent-plugin-bigquery 插件
 RUN gem install fluent-plugin-bigquery
 

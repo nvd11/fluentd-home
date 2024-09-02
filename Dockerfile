@@ -1,5 +1,5 @@
 # 使用 Fluentd 官方的镜像作为基础镜像
-FROM fluent/fluentd:latest
+FROM fluentd:latest
 
 RUN mkdir -p /app/logs/
 

@@ -7,7 +7,7 @@ RUN mkdir -p /app/logs/
 RUN gem install fluent-plugin-bigquery
 
 # 复制 Fluentd 配置文件到镜像中
-COPY fluent.conf /fluentd/etc/fluent.conf
+COPY fluent_file.conf /fluentd/etc/fluent.conf
 
 # 定义 CMD 指令用于启动 Fluentd 并指定配置文件
 CMD ["fluentd", "-c", "/fluentd/etc/fluent.conf"]

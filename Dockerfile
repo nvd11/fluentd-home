@@ -2,9 +2,7 @@
 FROM fluentd:latest
 USER root
 RUN mkdir -p /app/logs/
-
 RUN mkdir /app/gcp-key/
-
 
 # 安装 fluent-plugin-bigquery 插件
 RUN gem install fluent-plugin-bigquery
